@@ -1,0 +1,23 @@
+{
+	"include": [
+		"app/**/*",
+	],
+	"exclude": [
+		"dist",
+		"node_modules"
+	],
+	"compilerOptions": {
+		"allowJs": true,
+		"target": "ES3",
+		"lib": [
+			"ESNext"
+		],
+		"outDir": "build",
+		"declaration": true,
+		"declarationDir": "@types",
+		"types": [
+			"node",
+		],
+		"module": "UMD"
+	}
+}
