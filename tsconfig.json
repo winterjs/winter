@@ -7,17 +7,16 @@
 		"node_modules"
 	],
 	"compilerOptions": {
-		"allowJs": true,
-		"target": "ES3",
-		"lib": [
-			"ESNext"
-		],
+		"target": "ES5",
+		"module": "commonjs",
 		"outDir": "build",
-		"declaration": true,
 		"declarationDir": "@types",
+		"allowJs": true,
+		"declaration": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		"types": [
 			"node",
-		],
-		"module": "UMD"
+		]
 	}
 }

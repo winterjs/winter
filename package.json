@@ -12,16 +12,18 @@
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.6.0",
+    "express": "^4.17.1",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "bin": {
-    "winter":"./dist/cli.js"
-  },  
+    "winter": "./dist/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit ",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1"
   }
 }
